@@ -1,0 +1,61 @@
+@import "../global.scss";
+
+.heroSectionContainer {
+    width: 100%;
+    height: 110vh;
+    position: relative;
+    top: -60px;
+
+    img {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        filter: brightness(80%);
+    }
+
+    .heroSectionContent {
+        position: absolute;
+        bottom: 25%;
+        width: 50%;
+        color: white;
+        padding: 10px;
+
+        img {
+            width: 150px;
+            filter: brightness(100);
+        }
+
+        h1 {
+            font-size: 3.5rem;
+            font-weight: bolder;
+            letter-spacing: 5px;
+        }
+
+        p {
+            line-height: 20px;
+        }
+
+        .playBtn {
+            padding: 3px 30px;
+            background-color: $primary-color;
+            color: white;
+            border: none;
+            border: 2px solid $primary-color;
+            transition: 0.3s all ease-in;
+            margin-right: 10px;
+
+            &:hover {
+                background-color: transparent;
+            }
+
+            img {
+                width: 34px;
+            }
+        }
+    }
+}
+
+.heroSectionModalContent {
+    width: 100%;
+    height: 100%;
+}

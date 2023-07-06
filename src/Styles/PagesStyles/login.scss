@@ -1,0 +1,65 @@
+@import "../global.scss";
+
+.loginContainer {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+
+    .row {
+        .col {
+            img {
+                margin-top: 10px;
+            }
+        }
+    }
+
+    .loginFormBox {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        .loginBox {
+            background: rgba(255, 255, 255, 0.25);
+            box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+            backdrop-filter: blur(4px);
+            -webkit-backdrop-filter: blur(4px);
+            border-radius: 10px;
+            border: 1px solid rgba(255, 255, 255, 0.18);
+            padding: 20px;
+            border: 5px solid $primary-color;
+        }
+
+        .inputBox {
+            border: 3px solid $primary-color;
+            display: flex;
+            align-items: center;
+            width: 400px;
+            margin: 10px 0px;
+            padding: 5px 10px;
+
+            input {
+                width: 100%;
+                border: none;
+                outline: none;
+                margin-left: 5px;
+            }
+        }
+
+        button {
+            background-color: $primary-color;
+            border: none;
+            padding: 0px 30px;
+            font-weight: bolder;
+            color: white;
+            border-radius: 50px;
+        }
+
+        .link {
+            color: $primary-color;
+            font-weight: bolder;
+        }
+    }
+}

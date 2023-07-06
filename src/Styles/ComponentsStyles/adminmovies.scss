@@ -1,0 +1,23 @@
+.adminMoviesContainer {
+    .adminMovieAddBox {
+        display: flex;
+        flex-direction: column;
+
+        input,
+        textarea,
+        select {
+            margin: 10px 0px;
+            padding: 5px;
+            border: 2px solid black;
+            outline: none;
+        }
+
+        .addMovieBtn {
+            cursor: pointer;
+        }
+    }
+
+    .adminMovieDeleteIcon {
+        cursor: pointer;
+    }
+}

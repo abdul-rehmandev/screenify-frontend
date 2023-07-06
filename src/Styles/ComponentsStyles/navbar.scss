@@ -1,0 +1,92 @@
+@import "../global.scss";
+
+.navbarContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    background-color: rgba(255, 255, 255, 0.8);
+
+    .navbarContent {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .searchInputBox {
+            border: 2px solid $primary-color;
+            padding: 4px 10px;
+            display: flex;
+            align-items: center;
+            border-radius: 30px;
+
+            input {
+                border: none;
+                outline: none;
+                background-color: transparent;
+            }
+
+            img {
+                cursor: pointer;
+            }
+        }
+
+        .link {
+            margin: 0px 10px;
+        }
+
+        .active {
+            color: $primary-color;
+        }
+
+        .iconActive {
+            border: 2px solid $primary-color;
+            border-radius: 100%;
+        }
+    }
+}
+
+.searchModalContent {
+    width: 100%;
+    height: 100%;
+
+    h1 {
+        text-align: center;
+    }
+
+    .searchedMoviesBox {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 4px 0px;
+
+        .searchedMovie {
+            border: 2px solid $primary-color;
+            width: 300px;
+            display: flex;
+            flex-direction: column;
+            background: rgba(255, 255, 255, 0.25);
+            box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+            backdrop-filter: blur(4px);
+            -webkit-backdrop-filter: blur(4px);
+            border-radius: 10px;
+            border: 1px solid rgba(255, 255, 255, 0.18);
+            margin: 0px 10px;
+
+            .searchMovieImage {
+                img {
+                    width: 100%;
+                    height: 100%;
+                    background-size: cover;
+                }
+            }
+
+            .searchMovieName {
+                span {
+                    border: 2px solid red;
+                    background-color: red;
+                }
+            }
+        }
+    }
+}

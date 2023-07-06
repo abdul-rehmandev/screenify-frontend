@@ -1,0 +1,23 @@
+.categoryContainer {
+    h1 {
+        font-weight: bold;
+    }
+
+    .categoryBox {
+        display: flex;
+        margin: 10px 0px;
+        flex-wrap: nowrap;
+        width: 100%;
+        overflow-x: scroll;
+        padding: 50px 20px;
+
+        &::-webkit-scrollbar {
+            height: 10px;
+        }
+
+        &::-webkit-scrollbar-thumb {
+            background-color: rgba(0, 0, 0, 0.2);
+        }
+    }
+
+}

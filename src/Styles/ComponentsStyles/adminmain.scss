@@ -1,0 +1,18 @@
+@import "../global.scss";
+
+
+.adminMainContainer {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-wrap: wrap;
+
+    .mainBox {
+        margin: 5px 20px;
+        border: 2px solid $primary-color;
+        width: 300px;
+        padding: 20px;
+        background-color: $primary-color;
+        color: white;
+    }
+}
